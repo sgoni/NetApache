@@ -1,14 +1,15 @@
 ﻿using Banking.Account.Command.Application.Aggregates;
 using Banking.CQRS.Core.Domain;
 using Banking.CQRS.Core.Handlers;
+using Banking.CQRS.Core.Infrastructure;
 
 namespace Banking.Account.Command.Infrastructure.KafkaEvents
 {
     public class AccountEventSourcingHandler : EventSourcingHandler<AccountAggregate>
     {
-        private readonly AccountEventStore _eventStore;
+        private readonly EventStore _eventStore;
 
-        public AccountEventSourcingHandler(AccountEventStore eventStore)
+        public AccountEventSourcingHandler(EventStore eventStore)
         {
             _eventStore = eventStore;
         }
