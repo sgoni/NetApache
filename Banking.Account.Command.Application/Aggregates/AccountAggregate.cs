@@ -1,8 +1,6 @@
-﻿using Banking.Account.Command.Application.Features.BankAccount.Commands.DepositFund;
-using Banking.Account.Command.Application.Features.BankAccount.Commands.OpenAccount;
+﻿using Banking.Account.Command.Application.Features.BankAccount.Commands.OpenAccount;
 using Banking.CQRS.Core.Domain;
 using Banking.CQRS.Core.Events;
-using static MongoDB.Driver.WriteConcern;
 
 namespace Banking.Account.Command.Application.Aggregates
 {
