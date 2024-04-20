@@ -1,0 +1,6 @@
+@Banking.Account.Query.Consumer_HostAddress = http://localhost:5200
+
+GET {{Banking.Account.Query.Consumer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
