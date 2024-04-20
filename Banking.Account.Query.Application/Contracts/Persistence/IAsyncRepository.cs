@@ -9,8 +9,8 @@ namespace Banking.Account.Query.Application.Contracts.Persistence
         Task<T> AddAsync(T entity);
         Task<T> UpdateAsync(T entity);
         Task<T> DeleteAsync(T entity);
-        Task<T> AddEntity(T entity);
-        Task<T> UpdateEntity(T entity);
-        Task<T> DeleteEntity(T entity);
+        void AddEntity(T entity);
+        void UpdateEntity(T entity);
+        void DeleteEntity(T entity);
     }
 }
