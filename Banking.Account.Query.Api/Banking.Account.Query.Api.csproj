@@ -9,12 +9,15 @@
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Banking.Account.Command.Application\Banking.Account.Command.Application.csproj" />
-    <ProjectReference Include="..\Banking.Account.Command.Infrastructure\Banking.Account.Command.Infrastructure.csproj" />
+    <ProjectReference Include="..\Banking.Account.Query.Infrastructure\Banking.Account.Query.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
